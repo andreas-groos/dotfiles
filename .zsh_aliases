@@ -1,0 +1,43 @@
+alias yi="yarn install"
+alias ys="yarn start"
+alias yd="yarn dev"
+
+alias hs='history | grep'
+
+alias myip="curl http://ipecho.net/plain; echo"
+
+alias update='sudo apt-get update && sudo apt-get upgrade'
+
+alias c="clear"
+#
+## Colorize the ls output ##
+alias ls='ls --color=auto'
+ 
+## Use a long listing format ##
+alias ll='ls -la'
+ 
+## Show hidden files ##
+alias l.='ls -d .* --color=auto'
+
+## get rid of command not found ##
+alias cd..='cd ..'
+
+## a quick way to get out of current directory ##
+alias ..='cd ..'
+alias ...='cd ../../../'
+alias ....='cd ../../../../'
+alias .....='cd ../../../../'
+alias .4='cd ../../../../'
+alias .5='cd ../../../../..'
+
+alias ports='netstat -tulanp'
+
+alias rm="trash"
+
+alias dcu="docker-compose up"
+
+alias todo="code ~/TODO"
+
+alias t2="tree -L 2"
+alias t3="tree -L 3"
+
