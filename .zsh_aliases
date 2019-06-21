@@ -41,3 +41,4 @@ alias todo="code ~/TODO"
 alias t2="tree -L 2"
 alias t3="tree -L 3"
 
+alias rm-node-modules="find . -name \"node_modules\" -type d -prune -exec rm -rf '{}' +"

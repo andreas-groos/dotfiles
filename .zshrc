@@ -122,3 +122,15 @@ unsetopt correct_all
 fpath=(~/.zsh/completion $fpath)
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# Install Ruby Gems to ~/gems
+export GEM_HOME="$HOME/gems"
+export PATH="$HOME/gems/bin:$PATH"
+
+# Use vi mode for terminal
+# set -o vi
+#
+# Only show last 2 directories
+prompt_dir() {
+  #prompt_segment blue $CURRENT_FG '%~'
+  prompt_segment blue $CURRENT_FG '%2~'
+}
