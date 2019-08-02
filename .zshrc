@@ -134,3 +134,21 @@ prompt_dir() {
   #prompt_segment blue $CURRENT_FG '%~'
   prompt_segment blue $CURRENT_FG '%2~'
 }
+
+export PATH=${PATH}:/home/andreas/Android/Sdk/tools
+export PATH=${PATH}:/home/andreas/Android/Sdk/platform-tools
+
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+export ANDROID_SDK_ROOT=$HOME/Android/Sdk
+
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/andreas/google-cloud-sdk/path.zsh.inc' ]; then . '/home/andreas/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/andreas/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/andreas/google-cloud-sdk/completion.zsh.inc'; fi
