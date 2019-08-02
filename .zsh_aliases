@@ -47,7 +47,10 @@ alias rm-node-modules="find . -name \"node_modules\" -type d -prune -exec rm -rf
 
 alias rnra="react-native run-android"
 
-alias stats=vnstat
+alias stats="vnstat"
 
-alias  youtube="youtube-dl  -f "best[height<=480]" -o '%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s'"
+alias youtube-playlist="youtube-dl  -f 'best[height<=480]' -o '%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s'"
+
+
+alias youtube-playlist="youtube-dl  -f 'best[height<=480]' -o '%(title)s.%(ext)s'"
 
