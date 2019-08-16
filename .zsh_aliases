@@ -1,4 +1,5 @@
 alias yi="yarn install"
+
 alias ys="yarn start"
 alias yd="yarn dev"
 alias yb="yarn build"
@@ -38,7 +39,8 @@ alias rm="trash"
 
 alias dcu="docker-compose up"
 
-alias todo="code ~/TODO"
+alias todo="code ~/TODO.todo"
+alias note="code ~/NOTE.md"
 
 alias t2="tree -L 2"
 alias t3="tree -L 3"
@@ -53,4 +55,7 @@ alias youtube-playlist="youtube-dl  -f 'best[height<=480]' -o '%(playlist)s/%(pl
 
 
 alias youtube-playlist="youtube-dl  -f 'best[height<=480]' -o '%(title)s.%(ext)s'"
+## Sync using rclone
 
+alias syncup="rclone copy ~/SYNC db:/SYNC --exclude node_modules/** -v"
+alias syncdown="rclone copy db:/SYNC ~/SYNC --exclude node_modules/** -v"
