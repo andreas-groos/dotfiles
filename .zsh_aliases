@@ -37,7 +37,11 @@ alias ports='netstat -tulanp'
 
 alias rm="trash"
 
+## docker 
 alias dcu="docker-compose up"
+alias dps="docker ps"
+alias dsa="docker stop $(docker ps -a -q)"
+alias dra="docker rm $(docker ps -a -q)"
 
 alias todo="code ~/TODO.todo"
 alias note="code ~/NOTE.md"
@@ -55,6 +59,7 @@ alias youtube-playlist="youtube-dl  -f 'best[height<=480]' -o '%(playlist)s/%(pl
 
 
 alias youtube-playlist="youtube-dl  -f 'best[height<=480]' -o '%(title)s.%(ext)s'"
+
 ## Sync using rclone
 
 alias syncup="rclone copy ~/SYNC db:/SYNC --exclude node_modules/** -v -L"
@@ -68,3 +73,11 @@ alias p2i="npx prisma2 introspect"
 alias p2ms="npx prisma2 migrate save --experimental"
 alias p2mu="npx prisma2 migrate up --experimental --verbose"
 
+## one-letter shortcuts
+
+alias c="clear"
+alias e="exit"
+alias r="ranger"
+alias zr="source ~/.zshrc"
+
+alias spot="ncspot"
