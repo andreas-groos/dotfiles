@@ -152,3 +152,7 @@ if [ -f '/home/andreas/google-cloud-sdk/path.zsh.inc' ]; then . '/home/andreas/g
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/home/andreas/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/andreas/google-cloud-sdk/completion.zsh.inc'; fi
+
+# autojump
+. /usr/share/autojump/autojump.sh
+

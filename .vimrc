@@ -3,6 +3,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/nerdtree'
 Plug 'vimwiki/vimwiki'
+Plug 'mattn/calendar-vim'
 call plug#end()
 
 map <C-n> :NERDTreeToggle<CR>

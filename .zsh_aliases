@@ -78,6 +78,7 @@ alias p2mu="npx prisma2 migrate up --experimental --verbose"
 alias c="clear"
 alias e="exit"
 alias r="ranger"
+alias t="gnome-terminal ."
 alias zr="source ~/.zshrc"
 
 alias spot="ncspot"
