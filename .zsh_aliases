@@ -40,8 +40,6 @@ alias rm="trash"
 ## docker 
 alias dcu="docker-compose up"
 alias dps="docker ps"
-alias dsa="docker stop $(docker ps -a -q)"
-alias dra="docker rm $(docker ps -a -q)"
 
 alias todo="code ~/TODO.todo"
 alias note="code ~/NOTE.md"
