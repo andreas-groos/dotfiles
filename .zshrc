@@ -64,7 +64,7 @@ HYPHEN_INSENSITIVE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git node npm z)
+plugins=(git node npm z  zsh-autosuggestions zsh-syntax-highlighting fzf aws )
 
 source $ZSH/oh-my-zsh.sh
 
@@ -153,7 +153,7 @@ if [ -f '/home/andreas/google-cloud-sdk/path.zsh.inc' ]; then . '/home/andreas/g
 if [ -f '/home/andreas/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/andreas/google-cloud-sdk/completion.zsh.inc'; fi
 
 # autojump
-. /usr/share/autojump/autojump.sh
+# ./usr/share/autojump/autojump.sh
 
 
 # tabtab source for packages
