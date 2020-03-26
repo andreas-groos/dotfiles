@@ -146,7 +146,6 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 export ANDROID_SDK_ROOT=$HOME/Android/Sdk
 
-
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/home/andreas/google-cloud-sdk/path.zsh.inc' ]; then . '/home/andreas/google-cloud-sdk/path.zsh.inc'; fi
 
@@ -156,3 +155,11 @@ if [ -f '/home/andreas/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/and
 # autojump
 . /usr/share/autojump/autojump.sh
 
+
+# tabtab source for packages
+# uninstall by removing these lines
+[[ -f ~/.config/tabtab/__tabtab.zsh ]] && . ~/.config/tabtab/__tabtab.zsh || true
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/andreas/.sdkman"
+[[ -s "/home/andreas/.sdkman/bin/sdkman-init.sh" ]] && source "/home/andreas/.sdkman/bin/sdkman-init.sh"

@@ -117,3 +117,7 @@ if ! shopt -oq posix; then
 fi
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/andreas/.sdkman"
+[[ -s "/home/andreas/.sdkman/bin/sdkman-init.sh" ]] && source "/home/andreas/.sdkman/bin/sdkman-init.sh"
