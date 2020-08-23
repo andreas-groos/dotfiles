@@ -139,13 +139,21 @@ export PATH=${PATH}:/home/andreas/Android/Sdk/tools
 export PATH=${PATH}:/home/andreas/Android/Sdk/platform-tools
 
 export ANDROID_HOME=$HOME/Android/Sdk
-export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
+export PATH=$PATH:$ANDROID_HOME/emulator
+
+# Set alias to shorten command to run emulator
+alias run-emu="$ANDROID_HOME/tools/emulator @pixel2"
 
 export ANDROID_SDK_ROOT=$HOME/Android/Sdk
+export PATH="$HOME/.local/bin:$PATH"
 
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/home/andreas/google-cloud-sdk/path.zsh.inc' ]; then . '/home/andreas/google-cloud-sdk/path.zsh.inc'; fi
 
@@ -159,6 +167,8 @@ if [ -f '/home/andreas/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/and
 # tabtab source for packages
 # uninstall by removing these lines
 [[ -f ~/.config/tabtab/__tabtab.zsh ]] && . ~/.config/tabtab/__tabtab.zsh || true
+
+export FZF_BASE=/path/to/fzf/install/dir
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/home/andreas/.sdkman"

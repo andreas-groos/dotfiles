@@ -86,4 +86,12 @@ cd "$*"
 
 alias weather="curl wttr.in"
 alias pandora="pianobar"
+
+## TMUX
+alias t="tmux"
+alias ta="t a -t"
+alias tls="t ls"
+alias tn="t new -t"
 alias screen="xset dpms force off"
+
+alias net="sudo iftop -i wlp10s0"
