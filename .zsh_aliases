@@ -6,6 +6,8 @@ alias yb="yarn build"
 alias yse="yarn serve"
 
 alias hs='history | grep'
+alias reload="source ~/.zshrc"
+alias rm="trash"
 
 alias myip="curl http://ipecho.net/plain; echo"
 
@@ -92,6 +94,10 @@ alias t="tmux"
 alias ta="t a -t"
 alias tls="t ls"
 alias tn="t new -t"
+alias tks="tmux kill-seesion -t"
 alias screen="xset dpms force off"
+alias tx="tmuxinator" 
+alias txn="tmuxinator new" 
+alias txls="tmuxinator list" 
 
 alias net="sudo iftop -i wlp10s0"
