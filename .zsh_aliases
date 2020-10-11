@@ -96,8 +96,13 @@ alias tls="t ls"
 alias tn="t new -t"
 alias tks="tmux kill-seesion -t"
 alias screen="xset dpms force off"
+<<<<<<< Updated upstream
 alias tx="tmuxinator" 
 alias txn="tmuxinator new" 
 alias txls="tmuxinator list" 
 
 alias net="sudo iftop -i wlp10s0"
+
+alias pb="pianobar"
+alias pr="pyradio"
+

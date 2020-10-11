@@ -143,8 +143,6 @@ export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=$PATH:$ANDROID_HOME/emulator
-
-# Set alias to shorten command to run emulator
 alias run-emu="$ANDROID_HOME/tools/emulator @pixel2"
 
 export ANDROID_SDK_ROOT=$HOME/Android/Sdk
