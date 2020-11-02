@@ -1,7 +1,7 @@
 # /home/andreas/.config/tmuxinator/landslide.yml
 
-name: landslide
-root: ~/PROJECTS/Landslide/landslide-ui
+name: tourguide
+root: ~/PROJECTS/TourGuide/mvp3
 
 # Optional tmux socket
 # socket_name: foo
@@ -11,7 +11,7 @@ root: ~/PROJECTS/Landslide/landslide-ui
 
 # Project hooks
 # Runs on project start, always
-# on_project_start: command
+# on_project_start: docker run -d --name oct30 -e POSTGRES_PASSWORD=password -v ${HOME}/postgres-data/:/var/lib/postgresql/data -p 5432:5432 postgres
 # Run on project start, the first time
 # on_project_first_start: command
 # Run on project start, after the first time
@@ -19,7 +19,7 @@ root: ~/PROJECTS/Landslide/landslide-ui
 # Run on project exit ( detaching from tmux session )
 # on_project_exit: command
 # Run on project stop
-# on_project_stop: command
+# on_project_stop: docker stop oct30
 
 # Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
 # pre_window: rbenv shell 2.0.0-p247
@@ -40,15 +40,20 @@ root: ~/PROJECTS/Landslide/landslide-ui
 # attach: false
 
 windows:
-  - dev:
-      layout: 9e36,211x56,0,0{85x56,0,0,23,125x56,86,0,24}
+  - tourguide:
+      layout: 8e1f,207x54,0,0[207x39,0,0{103x39,0,0,0,103x39,104,0,1},207x14,0,40{103x14,0,40,2,103x14,104,40,3}]
       # Synchronize all panes of this window, can be enabled before or after the pane commands run.
       # 'before' represents legacy functionality and will be deprecated in a future release, in favour of 'after'
       # synchronize: after
       panes:
-        - yarn dev
-        - tig
+        - cd ~/PROJECTS/TourGuide/mvp3/tg-back && yarn dev
+        - cd ~/PROJECTS/TourGuide/mvp3/tg-front && yarn dev
+        - cd ~/PROJECTS/TourGuide/mvp3/tg-back && yarn studio
+        - pb
+  - git:
+      panes:
+        - cd ~/PROJECTS/TourGuide/mvp3/tg-back && tig
+        - cd ~/PROJECTS/TourGuide/mvp3/tg-front && tig
   - extra:
       panes:
-        - tig
         -
