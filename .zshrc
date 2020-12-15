@@ -171,3 +171,6 @@ export FZF_BASE=/path/to/fzf/install/dir
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/home/andreas/.sdkman"
 [[ -s "/home/andreas/.sdkman/bin/sdkman-init.sh" ]] && source "/home/andreas/.sdkman/bin/sdkman-init.sh"
+
+# Added by serverless binary installer
+export PATH="$HOME/.serverless/bin:$PATH"

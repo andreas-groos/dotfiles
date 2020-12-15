@@ -65,10 +65,10 @@ alias syncdown="rclone copy db:/SYNC ~/SYNC --exclude node_modules/** -v -L"
 
 ## Prisma2
 
-alias pg="npx prisma2 generate"
-alias pi="npx prisma2 introspect"
-alias pms="npx prisma2 migrate save --experimental"
-alias pmu="npx prisma2 migrate up --experimental --verbose"
+alias pg="npx prisma generate"
+alias pi="npx prisma introspect"
+alias pms="npx prisma migrate save --experimental"
+alias pmu="npx prisma migrate up --experimental --verbose"
 
 ## one-letter shortcuts
 
@@ -104,3 +104,9 @@ alias net="sudo iftop -i wlp10s0"
 
 alias pb="pianobar"
 alias pr="pyradio"
+
+### npm
+alias nd="npm run dev"
+alias nb="npm run build"
+alias ns="npm start"
+

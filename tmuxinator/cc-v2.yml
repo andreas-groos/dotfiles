@@ -1,7 +1,7 @@
-# /home/andreas/.config/tmuxinator/landslide.yml
+# /home/andreas/.config/tmuxinator/main.yml
 
-name: tourguide
-root: ~/PROJECTS/TourGuide/mvp3
+name: cc-v2
+root: ~/PROJECTS/Congress.Cards/cc-v2/cc
 
 # Optional tmux socket
 # socket_name: foo
@@ -11,7 +11,7 @@ root: ~/PROJECTS/TourGuide/mvp3
 
 # Project hooks
 # Runs on project start, always
-# on_project_start: docker run -d --name oct30 -e POSTGRES_PASSWORD=password -v ${HOME}/postgres-data/:/var/lib/postgresql/data -p 5432:5432 postgres
+# on_project_start: command
 # Run on project start, the first time
 # on_project_first_start: command
 # Run on project start, after the first time
@@ -19,7 +19,7 @@ root: ~/PROJECTS/TourGuide/mvp3
 # Run on project exit ( detaching from tmux session )
 # on_project_exit: command
 # Run on project stop
-# on_project_stop: docker stop oct30
+# on_project_stop: command
 
 # Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
 # pre_window: rbenv shell 2.0.0-p247
@@ -40,25 +40,14 @@ root: ~/PROJECTS/TourGuide/mvp3
 # attach: false
 
 windows:
-  - tourguide:
-      layout: 8e1f,207x54,0,0[207x39,0,0{103x39,0,0,0,103x39,104,0,1},207x14,0,40{103x14,0,40,2,103x14,104,40,3}]
+  - main:
       # Synchronize all panes of this window, can be enabled before or after the pane commands run.
       # 'before' represents legacy functionality and will be deprecated in a future release, in favour of 'after'
       # synchronize: after
       panes:
-        - docker run --rm -it -v $(pwd):/data -p 8080:80 klokantech/openmaptiles-server
-        - cd ~/PROJECTS/TourGuide/mvp3/tg-front && npm run cy:open
-        - cd ~/PROJECTS/TourGuide/mvp3/tg-front && npm run storybook
-        - cd ~/PROJECTS/TourGuide/mvp3/tg-front && npm run test
-        - cd ~/PROJECTS/TourGuide/mvp3/tg-back && npm run dev
-        - cd ~/PROJECTS/TourGuide/mvp3/tg-front && npm run dev
-        - cd ~/PROJECTS/TourGuide/mvp3/tg-back && npm run studio
-        
-        - pb
-  - git:
-      panes:
-        - cd ~/PROJECTS/TourGuide/mvp3/tg-back && tig
-        - cd ~/PROJECTS/TourGuide/mvp3/tg-front && tig
-  - extra:
-      panes:
-        -
+        - npm start
+        - cd functions && npm run serve
+        - tig
+  - system: 
+      panes: 
+        - 
