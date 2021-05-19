@@ -1,7 +1,7 @@
 # /home/andreas/.config/tmuxinator/main.yml
 
 name: cc-v2
-root: ~/PROJECTS/Congress.Cards/cc-v2/cc
+root: ~/Projects/Congress.Cards/cc-v2/cc
 
 # Optional tmux socket
 # socket_name: foo

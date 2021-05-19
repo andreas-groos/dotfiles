@@ -1,7 +1,7 @@
 # /home/andreas/.config/tmuxinator/landslide.yml
 
 name: landslide
-root: ~/PROJECTS/Landslide/landslide-ui
+root: ~/Projects/Landslide/landslide-ui
 
 # Optional tmux socket
 # socket_name: foo

@@ -1,7 +1,7 @@
 # /home/andreas/.config/tmuxinator/landslide.yml
 
 name: tourguide
-root: ~/PROJECTS/TourGuide/mvp3
+root: ~/Projects/TourGuide/mvp3
 
 # Optional tmux socket
 # socket_name: foo
@@ -47,18 +47,18 @@ windows:
       # synchronize: after
       panes:
         - docker run --rm -it -v $(pwd):/data -p 8080:80 klokantech/openmaptiles-server
-        - cd ~/PROJECTS/TourGuide/mvp3/tg-front && npm run cy:open
-        - cd ~/PROJECTS/TourGuide/mvp3/tg-front && npm run storybook
-        - cd ~/PROJECTS/TourGuide/mvp3/tg-front && npm run test
-        - cd ~/PROJECTS/TourGuide/mvp3/tg-back && npm run dev
-        - cd ~/PROJECTS/TourGuide/mvp3/tg-front && npm run dev
-        - cd ~/PROJECTS/TourGuide/mvp3/tg-back && npm run studio
+        - cd ~/Projects/TourGuide/mvp3/tg-front && npm run cy:open
+        - cd ~/Projects/TourGuide/mvp3/tg-front && npm run storybook
+        - cd ~/Projects/TourGuide/mvp3/tg-front && npm run test
+        - cd ~/Projects/TourGuide/mvp3/tg-back && npm run dev
+        - cd ~/Projects/TourGuide/mvp3/tg-front && npm run dev
+        - cd ~/Projects/TourGuide/mvp3/tg-back && npm run studio
         
         - pb
   - git:
       panes:
-        - cd ~/PROJECTS/TourGuide/mvp3/tg-back && tig
-        - cd ~/PROJECTS/TourGuide/mvp3/tg-front && tig
+        - cd ~/Projects/TourGuide/mvp3/tg-back && tig
+        - cd ~/Projects/TourGuide/mvp3/tg-front && tig
   - extra:
       panes:
         -
