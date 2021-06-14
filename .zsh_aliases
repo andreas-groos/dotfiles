@@ -76,6 +76,7 @@ alias c="clear"
 alias e="exit"
 alias r="ranger"
 alias t="gnome-terminal ."
+alias n="nemo ."
 alias zr="source ~/.zshrc"
 
 alias spot="ncspot"

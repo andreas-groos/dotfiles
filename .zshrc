@@ -174,3 +174,4 @@ export SDKMAN_DIR="/home/andreas/.sdkman"
 
 # Added by serverless binary installer
 export PATH="$HOME/.serverless/bin:$PATH"
+export PATH=$HOME/bin:$PATH
