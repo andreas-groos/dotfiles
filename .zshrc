@@ -3,9 +3,12 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/andreas/.oh-my-zsh"
+export PATH="/home/andreas/gems/bin"
 export PATH="$PATH:/opt/yarn-[version]/bin"
 # set to more colors
 export TERM="xterm-256color"
+export PATH="$PATH:/home/andreas/snap/flutter/common/flutter/bin"
+
 #
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 # ZSH_THEME="robbyrussell"
@@ -122,9 +125,9 @@ unsetopt correct_all
 fpath=(~/.zsh/completion $fpath)
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-# Install Ruby Gems to ~/gems
-export GEM_HOME="$HOME/gems"
-export PATH="$HOME/gems/bin:$PATH"
+# # Install Ruby Gems to ~/gems
+# export GEM_HOME="$HOME/gems"
+# export PATH="$HOME/gems/bin:$PATH"
 
 # Use vi mode for terminal
 # set -o vi

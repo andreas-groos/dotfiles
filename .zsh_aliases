@@ -111,3 +111,9 @@ alias nd="npm run dev"
 alias nb="npm run build"
 alias ns="npm start"
 
+### custom 
+
+alias notes="code ~/Notes"
+alias studies="code ~/Studies"
+alias camera="sudo modprobe -r v4l2loopback && obs  </dev/null &>/dev/null &"
+
